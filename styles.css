@@ -195,21 +195,20 @@ th {
     color: white;
     font-weight: 600;
     position: relative;
-    padding: 1rem 2.5rem 1rem 0.75rem;
-    white-space: nowrap;
-    min-width: 150px;
+    padding: 0.75rem 2rem 0.75rem 0.75rem;
+    white-space: normal;
+}
+
+th:first-child {
+    width: 150px;
+}
+
+th:not(:first-child) {
+    width: calc((100% - 150px) / 4);
 }
 
 th br {
     margin: 0.5rem 0;
-}
-
-th:first-child {
-    min-width: 120px;
-}
-
-th:first-child, td:first-child {
-    text-align: left;
 }
 
 tr:nth-child(even) {
@@ -222,7 +221,7 @@ tr:hover {
 
 .sort-button {
     position: absolute;
-    right: 0.75rem;
+    right: 0.5rem;
     top: 50%;
     transform: translateY(-50%);
     background: none;
@@ -234,6 +233,11 @@ tr:hover {
     font-size: 1rem;
     opacity: 0.8;
     transition: opacity 0.2s;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sort-button:hover {
@@ -255,6 +259,11 @@ td.us-tariff {
 }
 
 @media (max-width: 640px) {
+    .container {
+        padding: 0 0.5rem;
+        margin: 1rem auto;
+    }
+
     .formula-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -277,5 +286,107 @@ td.us-tariff {
     button {
         width: 100%;
         max-width: 200px;
+    }
+
+    .table-container {
+        margin: 0 -0.5rem;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    table {
+        font-size: 0.9rem;
+        border-radius: 0;
+    }
+
+    th {
+        padding: 0.75rem;
+        min-width: 110px;
+        width: auto;
+        font-size: 0.9rem;
+        line-height: 1.3;
+        position: relative;
+        text-align: center;
+        min-height: 75px;
+    }
+
+    th:first-child {
+        min-width: 90px;
+        width: auto;
+        text-align: left;
+    }
+
+    th:not(:first-child) {
+        width: auto;
+    }
+
+    th br {
+        display: none;
+    }
+
+    th > span {
+        display: block;
+        padding-right: 0;
+    }
+
+    th > span:last-of-type {
+        margin-top: 0.25rem;
+        opacity: 0.9;
+    }
+
+    .sort-button {
+        position: absolute;
+        top: 50%;
+        right: 0.5rem;
+        transform: translateY(-50%);
+        padding: 0;
+        font-size: 0.8rem;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: unset;
+        background-color: rgba(255, 255, 255, 0.15);
+        border-radius: 3px;
+    }
+
+    td {
+        text-align: right;
+        padding: 0.75rem;
+    }
+
+    td:first-child {
+        text-align: left;
+    }
+}
+
+/* Additional styles for very narrow screens */
+@media (max-width: 380px) {
+    th {
+        min-width: 90px;
+        font-size: 0.8rem;
+        padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+        min-height: 65px;
+    }
+
+    th:first-child {
+        min-width: 80px;
+    }
+
+    .sort-button {
+        right: 0.25rem;
+        width: 18px;
+        height: 18px;
+        font-size: 0.7rem;
+    }
+
+    .formula-text {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    .formula-desc {
+        font-size: 0.8rem;
     }
 }
