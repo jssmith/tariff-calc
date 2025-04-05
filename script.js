@@ -56,11 +56,6 @@ const tradeData = [
     "imports": 16685.50984
   },
   {
-    "country": "Austria",
-    "exports": 4474.205091,
-    "imports": 17572.012829
-  },
-  {
     "country": "Azerbaijan",
     "exports": 255.07449,
     "imports": 157.776472
@@ -89,11 +84,6 @@ const tradeData = [
     "country": "Belarus",
     "exports": 10.599133,
     "imports": 20.048973
-  },
-  {
-    "country": "Belgium",
-    "exports": 34177.940419,
-    "imports": 27849.850475
   },
   {
     "country": "Belize",
@@ -149,11 +139,6 @@ const tradeData = [
     "country": "Brunei",
     "exports": 127.213271,
     "imports": 238.849306
-  },
-  {
-    "country": "Bulgaria",
-    "exports": 489.4349229999999,
-    "imports": 1490.134155
   },
   {
     "country": "Burkina Faso",
@@ -261,11 +246,6 @@ const tradeData = [
     "imports": 1014.676411
   },
   {
-    "country": "Croatia",
-    "exports": 993.902407,
-    "imports": 1000.870837
-  },
-  {
     "country": "Cuba",
     "exports": 586.4998250000001,
     "imports": 4.869872000000001
@@ -274,21 +254,6 @@ const tradeData = [
     "country": "Curacao",
     "exports": 823.501266,
     "imports": 31.935945
-  },
-  {
-    "country": "Cyprus",
-    "exports": 183.422678,
-    "imports": 58.860309
-  },
-  {
-    "country": "Czech Republic",
-    "exports": 4279.765621,
-    "imports": 8081.908338999999
-  },
-  {
-    "country": "Denmark",
-    "exports": 5807.765771,
-    "imports": 10040.422224
   },
   {
     "country": "Djibouti",
@@ -336,11 +301,6 @@ const tradeData = [
     "imports": 0.8529180000000001
   },
   {
-    "country": "Estonia",
-    "exports": 373.874186,
-    "imports": 1065.40398
-  },
-  {
     "country": "Eswatini",
     "exports": 46.113517,
     "imports": 22.588609
@@ -369,16 +329,6 @@ const tradeData = [
     "country": "Fiji",
     "exports": 94.67957100000001,
     "imports": 259.272473
-  },
-  {
-    "country": "Finland",
-    "exports": 2564.091906,
-    "imports": 8029.51671
-  },
-  {
-    "country": "France",
-    "exports": 43520.382081,
-    "imports": 59903.267951
   },
   {
     "country": "French Guiana",
@@ -416,11 +366,6 @@ const tradeData = [
     "imports": 165.414171
   },
   {
-    "country": "Germany",
-    "exports": 75612.90297200001,
-    "imports": 160436.547928
-  },
-  {
     "country": "Ghana",
     "exports": 967.304543,
     "imports": 1171.728486
@@ -429,11 +374,6 @@ const tradeData = [
     "country": "Gibraltar",
     "exports": 650.5965190000001,
     "imports": 0.4311789999999999
-  },
-  {
-    "country": "Greece",
-    "exports": 2613.888774,
-    "imports": 2243.610292
   },
   {
     "country": "Greenland",
@@ -491,11 +431,6 @@ const tradeData = [
     "imports": 5972.900454000001
   },
   {
-    "country": "Hungary",
-    "exports": 3260.923937,
-    "imports": 12703.931455
-  },
-  {
     "country": "Iceland",
     "exports": 985.844921,
     "imports": 1072.626837
@@ -521,19 +456,9 @@ const tradeData = [
     "imports": 7422.275380999999
   },
   {
-    "country": "Ireland",
-    "exports": 16538.031298,
-    "imports": 103286.253424
-  },
-  {
     "country": "Israel",
     "exports": 14792.03496,
     "imports": 22217.484849
-  },
-  {
-    "country": "Italy",
-    "exports": 32402.003335,
-    "imports": 76366.488191
   },
   {
     "country": "Jamaica",
@@ -596,11 +521,6 @@ const tradeData = [
     "imports": 803.320155
   },
   {
-    "country": "Latvia",
-    "exports": 545.858791,
-    "imports": 630.7248050000001
-  },
-  {
     "country": "Lebanon",
     "exports": 541.421719,
     "imports": 257.571987
@@ -624,16 +544,6 @@ const tradeData = [
     "country": "Liechtenstein",
     "exports": 66.04088999999999,
     "imports": 243.72052
-  },
-  {
-    "country": "Lithuania",
-    "exports": 1929.089639,
-    "imports": 2011.564192
-  },
-  {
-    "country": "Luxembourg",
-    "exports": 1136.895363,
-    "imports": 698.625976
   },
   {
     "country": "Macau",
@@ -669,11 +579,6 @@ const tradeData = [
     "country": "Mali",
     "exports": 51.49678900000001,
     "imports": 5.500278000000001
-  },
-  {
-    "country": "Malta",
-    "exports": 360.8218660000001,
-    "imports": 220.446394
   },
   {
     "country": "Marshall Islands",
@@ -761,11 +666,6 @@ const tradeData = [
     "imports": 120.461589
   },
   {
-    "country": "Netherlands",
-    "exports": 89648.78489900002,
-    "imports": 34132.81023800001
-  },
-  {
     "country": "New Caledonia",
     "exports": 29.39451799999999,
     "imports": 33.844904
@@ -851,16 +751,6 @@ const tradeData = [
     "imports": 0.009335
   },
   {
-    "country": "Poland",
-    "exports": 11984.988111,
-    "imports": 13688.36707
-  },
-  {
-    "country": "Portugal",
-    "exports": 3048.429239,
-    "imports": 6588.956258
-  },
-  {
     "country": "Qatar",
     "exports": 3804.248139,
     "imports": 1834.185727
@@ -874,11 +764,6 @@ const tradeData = [
     "country": "Reunion",
     "exports": 11.883522,
     "imports": 44.06685599999999
-  },
-  {
-    "country": "Romania",
-    "exports": 1259.2816,
-    "imports": 3905.012813
   },
   {
     "country": "Russia",
@@ -941,16 +826,6 @@ const tradeData = [
     "imports": 101.535218
   },
   {
-    "country": "Slovakia",
-    "exports": 552.7389830000001,
-    "imports": 8187.354597
-  },
-  {
-    "country": "Slovenia",
-    "exports": 332.200789,
-    "imports": 6293.03794
-  },
-  {
     "country": "Solomon Islands",
     "exports": 13.147232,
     "imports": 1.345899
@@ -969,11 +844,6 @@ const tradeData = [
     "country": "South Sudan",
     "exports": 59.276702,
     "imports": 0.805202
-  },
-  {
-    "country": "Spain",
-    "exports": 23910.286257,
-    "imports": 21278.741242
   },
   {
     "country": "Sri Lanka",
@@ -1019,11 +889,6 @@ const tradeData = [
     "country": "Svalbard, Jan Mayen Island",
     "exports": 0.404543,
     "imports": 0.041855
-  },
-  {
-    "country": "Sweden",
-    "exports": 8187.319415,
-    "imports": 17995.672668
   },
   {
     "country": "Switzerland",
