@@ -24,20 +24,22 @@ body {
 .container {
     max-width: 1200px;
     margin: 2rem auto;
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 
 h1 {
     color: var(--primary-color);
     margin-bottom: 1rem;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 
 .source-link {
     text-align: center;
     margin-bottom: 2rem;
     color: var(--secondary-color);
+    font-size: 1.1rem;
 }
 
 .source-link a {
@@ -49,20 +51,81 @@ h1 {
     text-decoration: underline;
 }
 
+.calculator-section {
+    max-width: 1000px;
+    margin: 0 auto 2rem;
+}
+
+.formulas {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #e9ecef;
+}
+
+.formulas h2 {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.formula-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.formula {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.formula h3 {
+    color: var(--accent-color);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.formula-text {
+    font-family: "Courier New", monospace;
+    font-size: 1.1rem;
+    background-color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    border: 1px solid #e9ecef;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.formula-desc {
+    color: #666;
+    font-style: italic;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
 .parameters {
     background-color: #f1f1f1;
     padding: 1.5rem;
-    border-radius: 4px;
-    margin-bottom: 2rem;
+    border-radius: 8px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.parameter-inputs {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
 }
 
 .parameter-group {
     flex: 1;
-    min-width: 200px;
+    max-width: 200px;
+    text-align: center;
 }
 
 .parameter-group label {
@@ -70,32 +133,34 @@ h1 {
     margin-bottom: 0.5rem;
     font-weight: bold;
     color: var(--secondary-color);
+    font-size: 1rem;
 }
 
 .parameter-group input {
     width: 100%;
     padding: 0.5rem;
     border: 1px solid var(--border-color);
-    border-radius: 4px;
+    border-radius: 6px;
     font-size: 1rem;
+    text-align: center;
 }
 
 .button-group {
     display: flex;
     gap: 1rem;
-    flex: 2;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 button {
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1.5rem;
     background-color: var(--accent-color);
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.2s;
+    font-size: 1.1rem;
+    transition: all 0.2s;
+    min-width: 160px;
 }
 
 button:hover {
@@ -103,15 +168,20 @@ button:hover {
 }
 
 .table-container {
+    max-width: 1200px;
+    margin: 0 auto;
     overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 table {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
+    border-collapse: separate;
+    border-spacing: 0;
     background-color: white;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 th, td {
@@ -125,7 +195,17 @@ th {
     color: white;
     font-weight: 600;
     position: relative;
-    padding-right: 2rem;
+    padding: 1rem 2.5rem 1rem 0.75rem;
+    white-space: nowrap;
+    min-width: 150px;
+}
+
+th br {
+    margin: 0.5rem 0;
+}
+
+th:first-child {
+    min-width: 120px;
 }
 
 th:first-child, td:first-child {
@@ -142,7 +222,7 @@ tr:hover {
 
 .sort-button {
     position: absolute;
-    right: 0.5rem;
+    right: 0.75rem;
     top: 50%;
     transform: translateY(-50%);
     background: none;
@@ -150,6 +230,7 @@ tr:hover {
     color: white;
     cursor: pointer;
     padding: 0.25rem;
+    min-width: auto;
     font-size: 1rem;
     opacity: 0.8;
     transition: opacity 0.2s;
@@ -160,9 +241,28 @@ tr:hover {
     background: none;
 }
 
-@media (max-width: 768px) {
-    .parameters {
+th.us-tariff {
+    background-color: #FFD700;
+    color: black;
+}
+
+th.us-tariff .sort-button {
+    color: black;
+}
+
+td.us-tariff {
+    background-color: #FFF8DC;
+}
+
+@media (max-width: 640px) {
+    .formula-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .parameter-inputs {
         flex-direction: column;
+        align-items: center;
     }
 
     .parameter-group {
@@ -170,7 +270,12 @@ tr:hover {
     }
 
     .button-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
         width: 100%;
-        justify-content: center;
+        max-width: 200px;
     }
 }

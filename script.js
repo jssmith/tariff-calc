@@ -1191,7 +1191,12 @@ let currentSortDirection = 'desc';
 // Calculate tariff rate for a single country
 function calculateTariffRate(exports, imports, epsilon, phi) {
     if (imports === 0) return 0;
-    return - ((exports - imports) / (epsilon * phi * imports)) * 100;
+    return -((exports - imports) / (epsilon * phi * imports)) * 100;
+}
+
+// Calculate US Tariff
+function calculateUSTariff(deltaT) {
+    return Math.ceil(Math.max(deltaT/2, 10));
 }
 
 // Sort data
@@ -1199,11 +1204,19 @@ function sortData(data, column, direction) {
     return [...data].sort((a, b) => {
         let valueA, valueB;
 
-        if (column === 'tariff') {
+        if (column === 'tariff' || column === 'usTariff') {
             const epsilon = parseFloat(epsilonInput.value);
             const phi = parseFloat(phiInput.value);
-            valueA = calculateTariffRate(a.exports, a.imports, epsilon, phi);
-            valueB = calculateTariffRate(b.exports, b.imports, epsilon, phi);
+            const tariffA = calculateTariffRate(a.exports, a.imports, epsilon, phi);
+            const tariffB = calculateTariffRate(b.exports, b.imports, epsilon, phi);
+
+            if (column === 'usTariff') {
+                valueA = calculateUSTariff(tariffA);
+                valueB = calculateUSTariff(tariffB);
+            } else {
+                valueA = tariffA;
+                valueB = tariffB;
+            }
         } else {
             valueA = a[column];
             valueB = b[column];
@@ -1245,13 +1258,15 @@ function updateResults() {
 
     sortedData.forEach(data => {
         const tariffRate = calculateTariffRate(data.exports, data.imports, epsilon, phi);
+        const usTariff = calculateUSTariff(tariffRate);
 
         const row = document.createElement('tr');
         row.innerHTML = `
             <td>${data.country}</td>
             <td>${formatNumber(data.exports)}</td>
             <td>${formatNumber(data.imports)}</td>
-            <td>${Math.round(tariffRate)}</td>
+            <td>${Math.round(tariffRate)}%</td>
+            <td class="us-tariff">${Math.round(usTariff)}%</td>
         `;
         resultsTable.appendChild(row);
     });
@@ -1282,14 +1297,14 @@ function exportToCSV() {
     const epsilon = parseFloat(epsilonInput.value);
     const phi = parseFloat(phiInput.value);
 
-    let csvContent = "Country,Exports (USD millions),Imports (USD millions),Tariff Rate (%)\n";
+    let csvContent = "Country,Exports (USD millions),Imports (USD millions),Tariff Charged to US (%),US Reciprocal Tariff (%)\n";
 
     const sortedData = sortData(tradeData, currentSortColumn, currentSortDirection);
 
     sortedData.forEach(data => {
         const tariffRate = calculateTariffRate(data.exports, data.imports, epsilon, phi);
-        // Quote the country name and escape any existing quotes
-        csvContent += `"${data.country.replace(/"/g, '""')}",${data.exports},${data.imports},${Math.round(tariffRate)}\n`;
+        const usTariff = calculateUSTariff(tariffRate);
+        csvContent += `"${data.country.replace(/"/g, '""')}",${data.exports},${data.imports},${tariffRate},${usTariff}\n`;
     });
 
     const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });

@@ -3,27 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>US Trade Tariff Calculator</title>
+    <title>U.S. Tariff Calculator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>US Trade Tariff Calculator</h1>
+        <h1>U.S. Tariff Calculator</h1>
         <p class="source-link">
-            Based on the USTR <a href="https://ustr.gov/issue-areas/reciprocal-tariff-calculations" target="_blank">Reciprocal Tariff Calculations</a> released April 2, 2025.
+            Based on the USTR <a href="https://ustr.gov/issue-areas/reciprocal-tariff-calculations" target="_blank">Reciprocal Tariff Calculations</a> released April 2, 2025 and
+            U.S. Census Bureau <a href="https://www.census.gov/foreign-trade/balance/index.html">Trade in Goods by Country</a>.
         </p>
-        <div class="parameters">
-            <div class="parameter-group">
-                <label for="epsilon">Elasticity (ε):</label>
-                <input type="number" id="epsilon" step="0.1">
+        <div class="calculator-section">
+            <div class="formulas">
+                <h2>Calculation Formulas</h2>
+                <div class="formula-grid">
+                    <div class="formula">
+                        <h3>USTR Formula (Δτ<sub>i</sub>):</h3>
+                        <p class="formula-text">Δτ<sub>i</sub> = (x<sub>i</sub> - m<sub>i</sub>) / (ε × φ × m<sub>i</sub>)</p>
+                        <p class="formula-desc">where x<sub>i</sub> is US exports to country i, and m<sub>i</sub> is US imports from country i</p>
+                    </div>
+                    <div class="formula">
+                        <h3>US Reciprocal Tariff:</h3>
+                        <p class="formula-text">ceiling(max(-Δτ<sub>i</sub>/2 × 100, 10))</p>
+                        <p class="formula-desc">half the rate changed to US but no less than 10%, rounded up to the nearest integer</p>
+                    </div>
+                </div>
             </div>
-            <div class="parameter-group">
-                <label for="phi">Adjustment (φ):</label>
-                <input type="number" id="phi" step="0.05">
-            </div>
-            <div class="button-group">
-                <button id="reset">Reset to Defaults</button>
-                <button id="export">Export to CSV</button>
+            <div class="parameters">
+                <div class="parameter-inputs">
+                    <div class="parameter-group">
+                        <label for="epsilon">Elasticity (ε):</label>
+                        <input type="number" id="epsilon" step="0.1">
+                    </div>
+                    <div class="parameter-group">
+                        <label for="phi">Pass-Through (ϕ):</label>
+                        <input type="number" id="phi" step="0.05">
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button id="reset">Reset to Defaults</button>
+                    <button id="export">Export to CSV</button>
+                </div>
             </div>
         </div>
         <div class="table-container">
@@ -43,8 +63,12 @@
                             <button class="sort-button" data-column="imports" title="Sort by imports">↕</button>
                         </th>
                         <th>
-                            Reciprocal Tariff (Δτ<sub>i</sub>)<br>%
+                            Tariff Charged to US (-Δτ<sub>i</sub>)<br>%
                             <button class="sort-button" data-column="tariff" title="Sort by tariff rate">↕</button>
+                        </th>
+                        <th class="us-tariff">
+                            US Reciprocal Tariff<br>%
+                            <button class="sort-button" data-column="usTariff" title="Sort by US tariff">↕</button>
                         </th>
                     </tr>
                 </thead>
