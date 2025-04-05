@@ -16,11 +16,6 @@ const tradeData = [
     "imports": 2461.611142
   },
   {
-    "country": "Andorra",
-    "exports": 4.911141000000001,
-    "imports": 3.369249
-  },
-  {
     "country": "Angola",
     "exports": 682.3528689999999,
     "imports": 1869.239166
@@ -491,12 +486,12 @@ const tradeData = [
     "imports": 0.8081619999999999
   },
   {
-    "country": "Korea, North",
+    "country": "North Korea",
     "exports": 1.528597,
     "imports": 0.057465
   },
   {
-    "country": "Korea, South",
+    "country": "South Korea",
     "exports": 65541.79041799999,
     "imports": 131549.18712
   },
@@ -541,17 +536,12 @@ const tradeData = [
     "imports": 1465.562558
   },
   {
-    "country": "Liechtenstein",
-    "exports": 66.04088999999999,
-    "imports": 243.72052
-  },
-  {
     "country": "Macau",
     "exports": 275.141629,
     "imports": 108.792661
   },
   {
-    "country": "Macedonia",
+    "country": "North Macedonia",
     "exports": 60.635165,
     "imports": 173.710793
   },
@@ -619,11 +609,6 @@ const tradeData = [
     "country": "Moldova",
     "exports": 53.629683,
     "imports": 136.495167
-  },
-  {
-    "country": "Monaco",
-    "exports": 162.798791,
-    "imports": 47.589664
   },
   {
     "country": "Mongolia",
@@ -779,11 +764,6 @@ const tradeData = [
     "country": "Samoa",
     "exports": 54.397476,
     "imports": 5.717674
-  },
-  {
-    "country": "San Marino",
-    "exports": 80.023469,
-    "imports": 25.233029
   },
   {
     "country": "Sao Tome and Principe",
