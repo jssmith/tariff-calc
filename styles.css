@@ -389,6 +389,13 @@ td.us-tariff {
     td:first-child {
         text-align: left;
     }
+
+    .home-link {
+        position: static;
+        margin-bottom: 1rem;
+        text-align: left;
+        padding-left: 0.5rem;
+    }
 }
 
 /* Additional styles for very narrow screens */
