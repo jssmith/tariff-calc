@@ -751,11 +751,6 @@ const tradeData = [
     "imports": 44.06685599999999
   },
   {
-    "country": "Russia",
-    "exports": 526.066141,
-    "imports": 3007.500456
-  },
-  {
     "country": "Rwanda",
     "exports": 44.75779700000001,
     "imports": 30.238416
