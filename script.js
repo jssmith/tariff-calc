@@ -281,11 +281,6 @@ const tradeData = [
     "imports": 605760.393292
   },
   {
-    "country": "Faroe Islands",
-    "exports": 1.372159,
-    "imports": 249.452532
-  },
-  {
     "country": "Fiji",
     "exports": 94.67957100000001,
     "imports": 259.272473
@@ -349,11 +344,6 @@ const tradeData = [
     "country": "Haiti",
     "exports": 1214.423999,
     "imports": 616.7707849999999
-  },
-  {
-    "country": "Heard and McDonald Islands",
-    "exports": 0.058879,
-    "imports": 0.013589
   },
   {
     "country": "Honduras",
@@ -556,11 +546,6 @@ const tradeData = [
     "imports": 275.2250979999999
   },
   {
-    "country": "Nauru",
-    "exports": 0.916696,
-    "imports": 2.238924
-  },
-  {
     "country": "Nepal",
     "exports": 120.890203,
     "imports": 120.461589
@@ -589,16 +574,6 @@ const tradeData = [
     "country": "Nigeria",
     "exports": 4174.298267,
     "imports": 5699.175958999999
-  },
-  {
-    "country": "Niue",
-    "exports": 0.648447,
-    "imports": 4.322244
-  },
-  {
-    "country": "Norfolk Island",
-    "exports": 0.080944,
-    "imports": 0.191165
   },
   {
     "country": "Norway",
@@ -646,11 +621,6 @@ const tradeData = [
     "imports": 14177.628116
   },
   {
-    "country": "Pitcairn Islands",
-    "exports": 1.088006,
-    "imports": 0.009335
-  },
-  {
     "country": "Qatar",
     "exports": 3804.248139,
     "imports": 1834.185727
@@ -664,11 +634,6 @@ const tradeData = [
     "country": "Rwanda",
     "exports": 44.75779700000001,
     "imports": 30.238416
-  },
-  {
-    "country": "Sao Tome and Principe",
-    "exports": 1.021475,
-    "imports": 0.572291
   },
   {
     "country": "Saudi Arabia",
@@ -761,11 +726,6 @@ const tradeData = [
     "imports": 90.91341
   },
   {
-    "country": "Svalbard, Jan Mayen Island",
-    "exports": 0.404543,
-    "imports": 0.041855
-  },
-  {
     "country": "Switzerland",
     "exports": 24961.986918,
     "imports": 63425.318602
@@ -801,11 +761,6 @@ const tradeData = [
     "imports": 89.99636499999998
   },
   {
-    "country": "Tokelau",
-    "exports": 0.295764,
-    "imports": 0.177585
-  },
-  {
     "country": "Tonga",
     "exports": 19.909723,
     "imports": 2.845246
@@ -834,11 +789,6 @@ const tradeData = [
     "country": "Turks and Caicos Islands",
     "exports": 713.57661,
     "imports": 10.983629
-  },
-  {
-    "country": "Tuvalu",
-    "exports": 0.570424,
-    "imports": 0.224447
   },
   {
     "country": "Uganda",
@@ -874,11 +824,6 @@ const tradeData = [
     "country": "Vanuatu",
     "exports": 7.601059,
     "imports": 13.667021
-  },
-  {
-    "country": "Vatican City",
-    "exports": 0.9833900000000001,
-    "imports": 0.170599
   },
   {
     "country": "Venezuela",
