@@ -21,11 +21,6 @@ const tradeData = [
     "imports": 1869.239166
   },
   {
-    "country": "Anguilla",
-    "exports": 72.48832900000001,
-    "imports": 1.190598
-  },
-  {
     "country": "Antigua and Barbuda",
     "exports": 573.765998,
     "imports": 23.75155
@@ -121,16 +116,6 @@ const tradeData = [
     "imports": 42316.323621
   },
   {
-    "country": "British Indian Ocean Terr.",
-    "exports": 5.464806000000001,
-    "imports": 0.462491
-  },
-  {
-    "country": "British Virgin Islands",
-    "exports": 312.909554,
-    "imports": 60.246807
-  },
-  {
     "country": "Brunei",
     "exports": 127.213271,
     "imports": 238.849306
@@ -196,16 +181,6 @@ const tradeData = [
     "imports": 438947.386145
   },
   {
-    "country": "Christmas Island",
-    "exports": 2.11479,
-    "imports": 1.747242
-  },
-  {
-    "country": "Cocos (Keeling) Islands",
-    "exports": 2.58047,
-    "imports": 1.100644
-  },
-  {
     "country": "Colombia",
     "exports": 19037.613407,
     "imports": 17690.348963
@@ -239,11 +214,6 @@ const tradeData = [
     "country": "Cote d'Ivoire",
     "exports": 596.568616,
     "imports": 1014.676411
-  },
-  {
-    "country": "Cuba",
-    "exports": 586.4998250000001,
-    "imports": 4.869872000000001
   },
   {
     "country": "Curacao",
@@ -311,11 +281,6 @@ const tradeData = [
     "imports": 605760.393292
   },
   {
-    "country": "Falkland Islands(Islas Malvin)",
-    "exports": 4.092467,
-    "imports": 22.756661
-  },
-  {
     "country": "Faroe Islands",
     "exports": 1.372159,
     "imports": 249.452532
@@ -326,19 +291,9 @@ const tradeData = [
     "imports": 259.272473
   },
   {
-    "country": "French Guiana",
-    "exports": 28.999681,
-    "imports": 1.821129
-  },
-  {
     "country": "French Polynesia",
     "exports": 145.19757,
     "imports": 40.42327
-  },
-  {
-    "country": "French Southern and Antarctic",
-    "exports": 2.248567,
-    "imports": 0.036412
   },
   {
     "country": "Gabon",
@@ -351,11 +306,6 @@ const tradeData = [
     "imports": 1.969897
   },
   {
-    "country": "Gaza Strip admin. by Israel",
-    "exports": 0.559747,
-    "imports": 0.20487
-  },
-  {
     "country": "Georgia",
     "exports": 1736.461692,
     "imports": 165.414171
@@ -366,11 +316,6 @@ const tradeData = [
     "imports": 1171.728486
   },
   {
-    "country": "Gibraltar",
-    "exports": 650.5965190000001,
-    "imports": 0.4311789999999999
-  },
-  {
     "country": "Greenland",
     "exports": 48.420782,
     "imports": 32.585481
@@ -379,11 +324,6 @@ const tradeData = [
     "country": "Grenada",
     "exports": 165.335817,
     "imports": 14.074818
-  },
-  {
-    "country": "Guadeloupe",
-    "exports": 470.637794,
-    "imports": 3.427661
   },
   {
     "country": "Guatemala",
@@ -486,19 +426,9 @@ const tradeData = [
     "imports": 0.8081619999999999
   },
   {
-    "country": "North Korea",
-    "exports": 1.528597,
-    "imports": 0.057465
-  },
-  {
     "country": "South Korea",
     "exports": 65541.79041799999,
     "imports": 131549.18712
-  },
-  {
-    "country": "Kosovo",
-    "exports": 49.388369,
-    "imports": 34.01594600000001
   },
   {
     "country": "Kuwait",
@@ -576,11 +506,6 @@ const tradeData = [
     "imports": 20.448963
   },
   {
-    "country": "Martinique",
-    "exports": 199.161662,
-    "imports": 2.807758
-  },
-  {
     "country": "Mauritania",
     "exports": 139.755555,
     "imports": 2.854898
@@ -589,11 +514,6 @@ const tradeData = [
     "country": "Mauritius",
     "exports": 47.99103999999999,
     "imports": 234.519911
-  },
-  {
-    "country": "Mayotte",
-    "exports": 1.817609,
-    "imports": 1.88971
   },
   {
     "country": "Mexico",
@@ -619,11 +539,6 @@ const tradeData = [
     "country": "Montenegro",
     "exports": 27.681345,
     "imports": 15.382306
-  },
-  {
-    "country": "Montserrat",
-    "exports": 12.071251,
-    "imports": 5.631794
   },
   {
     "country": "Morocco",
@@ -746,19 +661,9 @@ const tradeData = [
     "imports": 8.915257999999998
   },
   {
-    "country": "Reunion",
-    "exports": 11.883522,
-    "imports": 44.06685599999999
-  },
-  {
     "country": "Rwanda",
     "exports": 44.75779700000001,
     "imports": 30.238416
-  },
-  {
-    "country": "Samoa",
-    "exports": 54.397476,
-    "imports": 5.717674
   },
   {
     "country": "Sao Tome and Principe",
@@ -824,11 +729,6 @@ const tradeData = [
     "country": "Sri Lanka",
     "exports": 368.214575,
     "imports": 3015.585462
-  },
-  {
-    "country": "St Helena",
-    "exports": 9.016194,
-    "imports": 10.636649
   },
   {
     "country": "St Kitts and Nevis",
@@ -994,11 +894,6 @@ const tradeData = [
     "country": "Wallis and Futuna",
     "exports": 0.049438,
     "imports": 0.039214
-  },
-  {
-    "country": "West Bank admin. by Israel",
-    "exports": 3.652286999999999,
-    "imports": 5.998891
   },
   {
     "country": "Zambia",
